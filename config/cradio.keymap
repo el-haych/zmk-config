@@ -30,6 +30,20 @@
         };
     };
 
+    combos {
+      compatible = "zmk,combos";
+      combo_layer4 {
+        timeout-ms = <50>;
+        key-position = <24 25>;
+        bindings = <&mo 4>;
+      };
+      combo_layer5 {
+        timeout-ms = <50>;
+        key-position = <21 22>;
+        bindings = <&mo 5>;
+      };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -105,12 +119,12 @@
         };
 
         extra_layer1 {
-            display-name = "Extra Layer 1";
+            display-name = "Layer 4";
             status = "reserved";
         };
 
         extra_layer2 {
-          display-name = "Extra Layer 2";
+          display-name = "Layer5";
           status = "reserved";
         };
     };
